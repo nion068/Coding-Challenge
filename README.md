@@ -67,7 +67,19 @@ after each other: “222 2 22” -> “CAB”.
 
 5. **Interact with the Application**:
 
-   - Follow on-screen prompts to input old phone pad key sequences and see the converted text.
+   Follow on-screen prompts to input old phone pad key sequences and see the converted text.
+
+    ```
+    *** Instructions ***
+    1. Enter valid old keypad input to get the text output.
+    2. Type "exit" to end the program.
+
+    Enter old keypad input: 222 2#
+    Output: CA
+
+    Enter old keypad input: exit
+    Exiting Program...
+    ```
 
 ---
 

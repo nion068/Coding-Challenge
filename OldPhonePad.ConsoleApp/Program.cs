@@ -24,6 +24,7 @@ public class Program
 
             if (input == "exit")
             {
+                Console.WriteLine("Exiting Program...");
                 break;
             }
 
@@ -31,7 +32,7 @@ public class Program
             {
                 var output = oldPhonePadToTextService.ConvertOldPhonePadInputToText(input ?? "");
 
-                Console.WriteLine(output + "\n");
+                Console.WriteLine($"Output: {output}\n");
             }
             catch (Exception e)
             {
