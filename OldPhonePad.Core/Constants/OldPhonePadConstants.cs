@@ -2,14 +2,14 @@
 
 public static class OldPhonePadConstants
 {
-    public const char SendKey = '#';
-
+    public const char SendKey   = '#';
     public const char BackSpace = '*';
-    public const char Pause = ' ';
+    public const char Pause     = ' ';
+    public const char SpaceKey  = '0';
 
     public static readonly Dictionary<char, string> PhoneKeyToCharactersMapping = new()
     {
-        {'0',       " " },
+        {SpaceKey,  " " },
         {'1',       "&'(" },
         {'2',       "ABC"},
         {'3',       "DEF"},

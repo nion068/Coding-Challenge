@@ -41,7 +41,9 @@ public class OldPhonePadToTextService : IOldPhonePadToTextService
                     break;
 
                 default:
-                    if (i + 1 < length && currentKey == input[i+1])
+                    if (i + 1 < length
+                        && currentKey == input[i+1]
+                        && currentKey != OldPhonePadConstants.SpaceKey)
                     {
                         keyPressCount++;
                         break;
@@ -60,12 +62,13 @@ public class OldPhonePadToTextService : IOldPhonePadToTextService
         return output.ToString();
     }
 
-    public (bool IsValid, string ErrorMessage) ValidateInput(string input)
+    private (bool IsValid, string ErrorMessage) ValidateInput(string input)
     {
         if (input is null)
         {
             return (false, "Input cannot be null");
         }
+
         if (input.Any(ch =>
             OldPhonePadConstants.PhoneKeyToCharactersMapping.ContainsKey(ch) is false
             && ch != OldPhonePadConstants.SendKey
