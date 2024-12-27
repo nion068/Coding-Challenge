@@ -25,6 +25,7 @@ after each other: “222 2 22” -> “CAB”.
 | 8 88777444666*664#     | TURING    |
 
 ## Assumptions for Implementation
+- Output will only contain capital letters.
 
 - A send key (#) will always be included at the end of every input:
 
